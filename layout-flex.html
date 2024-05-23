@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Flex</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+        header {
+            background: red;
+            color: #fff;
+            font-size: 2rem;
+            text-align: center;
+            font-weight: bold;
+            padding: 1em;
+            
+        }
+
+        ul li {
+            list-style-type: none;
+        }
+        ul li a {
+            text-decoration: none;
+        }
+        
+        main {
+            display: flex;
+        }
+
+        #sidebar-1 {
+            flex: 1;
+            background: yellow;
+        }
+
+        #content {
+            flex: 3;
+            background: orange;
+            padding: 0 1em;
+        }
+
+        #sidebar-2 {
+            flex: 2;
+            padding: 0 10px;
+            background:blue;
+            color: #fff;
+        }
+
+        footer {
+            background: black;
+            color: #fff;
+            text-align: center;
+            font-size: 12px;
+            padding: 1em;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <span>PT Hacktiv8 Indonesia</span>
+    </header>
+
+    <main>
+        <div id="sidebar-1">
+            <ul>
+                <li><a href="#menu1">Menu 1</a></li>
+                <li><a href="#menu2">Menu 2</a></li>
+                <li><a href="#menu3">Menu 3</a></li>
+                <li><a href="#menu4">Menu 4</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <h1>Judul Artikel 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolorem modi ex maiores officiis quam maxime iusto ducimus nihil tempora, ea minima. Facilis a quam accusamus, aperiam veniam iste. Cumque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, laudantium quibusdam cum doloribus rem odio magnam nisi officiis molestiae aperiam consequatur velit labore optio animi asperiores, impedit est autem ea?</p>
+
+            <h1>Judul Artikel 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolorem modi ex maiores officiis quam maxime iusto ducimus nihil tempora, ea minima. Facilis a quam accusamus, aperiam veniam iste. Cumque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, laudantium quibusdam cum doloribus rem odio magnam nisi officiis molestiae aperiam consequatur velit labore optio animi asperiores, impedit est autem ea?</p>
+
+            <h1>Judul Artikel 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolorem modi ex maiores officiis quam maxime iusto ducimus nihil tempora, ea minima. Facilis a quam accusamus, aperiam veniam iste. Cumque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, laudantium quibusdam cum doloribus rem odio magnam nisi officiis molestiae aperiam consequatur velit labore optio animi asperiores, impedit est autem ea?</p>
+
+        </div>
+
+        <div id="sidebar-2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptate fuga commodi quo laborum voluptatibus incidunt adipisci sapiente. Blanditiis, exercitationem quia nemo eos praesentium qui. Consectetur laboriosam neque hic laborum!</p>
+        </div>
+
+    </main>
+
+    <footer>
+        &copy; Copyright 2024. Nama Anda. All Rights Reserved.
+    </footer>
+
+
+</body>
+</html>
